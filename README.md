@@ -1,7 +1,7 @@
-Role Name
+Git
 =========
 
-A brief description of the role goes here.
+ref. <http://gggritso.com/human-git-aliases>
 
 Requirements
 ------------
