@@ -1,5 +1,11 @@
 ---
 
+git_config_dir: "{{ ansible_env.HOME }}/.config/git"
+git_config_file: "{{ git_config_dir }}/config"
+git_config_alias: "{{ git_config_dir }}/alias"
+git_config_file_old: "{{ ansible_env.HOME }}/.gitconfig"
+git_ignore_file_old: "{{ ansible_env.HOME }}/.gitignore_global"
+
 global_git_configs:
   - section: credential
     name: helper
