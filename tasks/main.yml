@@ -1,2 +1,24 @@
----
-# tasks file for git
+- name: install package
+  become: yes
+  block:
+    - name: install git
+      package:
+        name: git
+
+    - name: install tig
+      package:
+        name: tig
+
+  rescue:
+    - name: skip become
+      debug:
+        msg: skip install
+
+- name: set global git configs
+  git_config:
+    scope: global
+    name: "{{ item.section }}.{{ item.name }}"
+    value: "{{ item.value }}"
+  with_items:
+    - "{{ global_git_configs }}"
+    - "{{ global_git_aliases }}"

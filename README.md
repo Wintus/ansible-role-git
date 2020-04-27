@@ -1,7 +1,7 @@
-Role Name
+Git
 =========
 
-A brief description of the role goes here.
+ref. <http://gggritso.com/human-git-aliases>
 
 Requirements
 ------------
@@ -35,4 +35,7 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+ref
+
+- <https://git-scm.com/docs/git-config#FILES>
+
