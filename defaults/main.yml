@@ -144,7 +144,7 @@ global_git_aliases:
 
   - section: alias
     name: unstage
-    value: restore --staged
+    value: restore --staged .
 
   - section: alias
     name: unstash
