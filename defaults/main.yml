@@ -16,7 +16,7 @@ global_git_aliases:
 
   - section: alias
     name: back
-    value: checkout -
+    value: switch -
 
   - section: alias
     name: branches
@@ -24,7 +24,7 @@ global_git_aliases:
 
   - section: alias
     name: branchout
-    value: checkout -b
+    value: switch -c
 
   - section: alias
     name: contributors
@@ -36,7 +36,7 @@ global_git_aliases:
 
   - section: alias
     name: discard
-    value: checkout --
+    value: 'switch --discard-changes "$(git symbolic-ref --short HEAD)"'
 
   - section: alias
     name: file-trail
@@ -72,7 +72,7 @@ global_git_aliases:
 
   - section: alias
     name: new-branch
-    value: checkout -b
+    value: switch -c
 
   - section: alias
     name: patch
