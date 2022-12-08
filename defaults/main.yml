@@ -36,7 +36,7 @@ global_git_aliases:
 
   - section: alias
     name: discard
-    value: 'switch --discard-changes "$(git symbolic-ref --short HEAD)"'
+    value: checkout --force
 
   - section: alias
     name: file-trail
