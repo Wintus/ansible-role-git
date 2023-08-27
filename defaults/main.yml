@@ -16,7 +16,7 @@ global_git_aliases:
 
   - section: alias
     name: back
-    value: checkout -
+    value: switch -
 
   - section: alias
     name: branches
@@ -24,7 +24,7 @@ global_git_aliases:
 
   - section: alias
     name: branchout
-    value: checkout -b
+    value: switch -c
 
   - section: alias
     name: contributors
@@ -72,7 +72,7 @@ global_git_aliases:
 
   - section: alias
     name: new-branch
-    value: checkout -b
+    value: switch -c
 
   - section: alias
     name: patch
@@ -144,7 +144,7 @@ global_git_aliases:
 
   - section: alias
     name: unstage
-    value: reset -q HEAD --
+    value: restore --staged .
 
   - section: alias
     name: unstash
